@@ -1,0 +1,73 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <title>Organization Statistics</title>
+    <link rel="canonical" href="https://getbootstrap.com/docs/4.0/examples/grid/">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.datatables.net/1.13.7/css/dataTables.bootstrap4.min.css" integrity="sha384-qG0OxGrM7FX2QWKJFlEklnjVtIyDs8DV8Vsdp+56Mc8mexZqqM2+CWM8eGJ+/s/Q" crossorigin="anonymous">
+  </head>
+
+  <body>
+    <div class="container mt-3 mb-3">
+        <h1>
+            Organization Statistics for
+            <a href="https://github.com/{{ .Organization }}" target="_blank">{{ .Organization }}</a>
+        </h1>
+        <div class="row">
+            <table class="table table-bordered" id="stats">
+                <thead>
+                    <tr>
+                        <th>Avatar</th>
+                        <th>User</th>
+                        <th>Commits (Total)</th>
+                        <th>Additions (Total)</th>
+                        <th>Deletions (Total)</th>
+                        <th>Commits (Last Week)</th>
+                        <th>Commits (Last Month)</th>
+                        <th>Commits (Last Year)</th>
+                        <th>Avg. Commits (Day)</th>
+                        <th>Avg. Commits (Week)</th>
+                        <th>Avg. Commits (Month)</th>
+                        <th>Avg. Commits (Year)</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    {{ range $name, $stats := .Stats }}
+                    <tr>
+                        <td><img src="{{ $stats.Contributor.AvatarURL }}" alt="{{ $name }}" width="50" height="50"></td>
+                        <td><a href="{{ $stats.Contributor.HTMLURL }}" target="_blank">{{ $name }}</a></td>
+                        <td data-order="{{ $stats.Totals.Commits }}">{{ humanize $stats.Totals.Commits }}</td>
+                        <td class="text-success" data-order="{{ $stats.Totals.Additions }}">+{{ format $stats.Totals.Additions }}</td>
+                        <td class="text-danger" data-order="{{ $stats.Totals.Deletions }}">-{{ format $stats.Totals.Deletions }}</td>
+                        <td data-order="{{ $stats.Week.Commits }}">{{ format $stats.Week.Commits }}</td>
+                        <td data-order="{{ $stats.Month.Commits }}">{{ format $stats.Month.Commits }}</td>
+                        <td data-order="{{ $stats.Year.Commits }}">{{ format $stats.Year.Commits }}</td>
+                        <td data-order="{{ $stats.PerDay }}">{{ float $stats.PerDay }}</td>
+                        <td data-order="{{ $stats.PerWeek }}">{{ float $stats.PerWeek }}</td>
+                        <td data-order="{{ $stats.PerMonth }}">{{ float $stats.PerMonth }}</td>
+                        <td data-order="{{ $stats.PerYear }}">{{ float $stats.PerYear }}</td>
+                    </tr>
+                    {{ end }}
+                </tbody>
+            </table>
+        </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.7.0.js" integrity="sha384-ogycHROOTGA//2Q8YUfjz1Sr7xMOJTUmY2ucsPVuXAg4CtpgQJQzGZsX768KqetU" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://cdn.datatables.net/1.13.7/js/jquery.dataTables.min.js" integrity="sha384-cjmdOgDzOE22dUheI5E6Gzd3upfmReW8N1y/4jwKQE50KYcvFKZJA9JxWgQOzqwQ" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <script src="https://cdn.datatables.net/1.13.7/js/dataTables.bootstrap4.min.js" integrity="sha384-vCX+UFRnh1Gp0hr9dL82snXI1HvdBaApGHMjbewoGQ69VkYcHt9jvTy+Q4CAWwPX" crossorigin="anonymous"></script>
+    <script type="text/javascript">
+    $(document).ready(function() {
+        $('#stats').DataTable({
+            "order": [[ 2, "desc" ]],
+            "iDisplayLength": 25
+        });
+    });
+    </script>
+  </body>
+</html>

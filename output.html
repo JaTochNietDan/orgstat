@@ -1,0 +1,433 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <title>Organization Statistics</title>
+    <link rel="canonical" href="https://getbootstrap.com/docs/4.0/examples/grid/">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.datatables.net/1.13.7/css/dataTables.bootstrap4.min.css" integrity="sha384-qG0OxGrM7FX2QWKJFlEklnjVtIyDs8DV8Vsdp+56Mc8mexZqqM2+CWM8eGJ+/s/Q" crossorigin="anonymous">
+  </head>
+
+  <body>
+    <div class="container mt-3 mb-3">
+        <h1>
+            Organization Statistics for
+            <a href="https://github.com/teamwork" target="_blank">teamwork</a>
+        </h1>
+        <div class="row">
+            <table class="table table-bordered" id="stats">
+                <thead>
+                    <tr>
+                        <th>Avatar</th>
+                        <th>User</th>
+                        <th>Commits (Total)</th>
+                        <th>Additions (Total)</th>
+                        <th>Deletions (Total)</th>
+                        <th>Commits (Last Week)</th>
+                        <th>Commits (Last Month)</th>
+                        <th>Commits (Last Year)</th>
+                        <th>Avg. Commits (Day)</th>
+                        <th>Avg. Commits (Week)</th>
+                        <th>Avg. Commits (Month)</th>
+                        <th>Avg. Commits (Year)</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    
+                    <tr>
+                        <td><img src="https://avatars.githubusercontent.com/u/1408434?v=4" alt="4ver" width="50" height="50"></td>
+                        <td><a href="https://github.com/4ver" target="_blank">4ver</a></td>
+                        <td data-order="3">3</td>
+                        <td class="text-success" data-order="179">+179</td>
+                        <td class="text-danger" data-order="67">-67</td>
+                        <td data-order="0">0</td>
+                        <td data-order="0">0</td>
+                        <td data-order="0">0</td>
+                        <td data-order="0.0007585335018963338">0.00</td>
+                        <td data-order="0.005309734513274336">0.01</td>
+                        <td data-order="0.022756005056890013">0.02</td>
+                        <td data-order="0.2768647281921618">0.28</td>
+                    </tr>
+                    
+                    <tr>
+                        <td><img src="https://avatars.githubusercontent.com/u/9094068?v=4" alt="AnthonyJHolmes" width="50" height="50"></td>
+                        <td><a href="https://github.com/AnthonyJHolmes" target="_blank">AnthonyJHolmes</a></td>
+                        <td data-order="3">3</td>
+                        <td class="text-success" data-order="10">+10</td>
+                        <td class="text-danger" data-order="8">-8</td>
+                        <td data-order="0">0</td>
+                        <td data-order="0">0</td>
+                        <td data-order="0">0</td>
+                        <td data-order="0.0007585335018963338">0.00</td>
+                        <td data-order="0.005309734513274336">0.01</td>
+                        <td data-order="0.022756005056890013">0.02</td>
+                        <td data-order="0.2768647281921618">0.28</td>
+                    </tr>
+                    
+                    <tr>
+                        <td><img src="https://avatars.githubusercontent.com/u/5185331?v=4" alt="CFDan" width="50" height="50"></td>
+                        <td><a href="https://github.com/CFDan" target="_blank">CFDan</a></td>
+                        <td data-order="4">4</td>
+                        <td class="text-success" data-order="11">+11</td>
+                        <td class="text-danger" data-order="6">-6</td>
+                        <td data-order="0">0</td>
+                        <td data-order="0">0</td>
+                        <td data-order="0">0</td>
+                        <td data-order="0.0010781671159029648">0.00</td>
+                        <td data-order="0.007547169811320755">0.01</td>
+                        <td data-order="0.03234501347708895">0.03</td>
+                        <td data-order="0.3935309973045822">0.39</td>
+                    </tr>
+                    
+                    <tr>
+                        <td><img src="https://avatars.githubusercontent.com/u/6132323?v=4" alt="CaelumF" width="50" height="50"></td>
+                        <td><a href="https://github.com/CaelumF" target="_blank">CaelumF</a></td>
+                        <td data-order="5">5</td>
+                        <td class="text-success" data-order="5">+5</td>
+                        <td class="text-danger" data-order="3">-3</td>
+                        <td data-order="0">0</td>
+                        <td data-order="0">0</td>
+                        <td data-order="0">0</td>
+                        <td data-order="0.0013477088948787063">0.00</td>
+                        <td data-order="0.009433962264150945">0.01</td>
+                        <td data-order="0.04043126684636119">0.04</td>
+                        <td data-order="0.4919137466307278">0.49</td>
+                    </tr>
+                    
+                    <tr>
+                        <td><img src="https://avatars.githubusercontent.com/u/22105184?v=4" alt="DavidCannon" width="50" height="50"></td>
+                        <td><a href="https://github.com/DavidCannon" target="_blank">DavidCannon</a></td>
+                        <td data-order="1">1</td>
+                        <td class="text-success" data-order="2">+2</td>
+                        <td class="text-danger" data-order="2">-2</td>
+                        <td data-order="0">0</td>
+                        <td data-order="0">0</td>
+                        <td data-order="0">0</td>
+                        <td data-order="0.00026652452025586353">0.00</td>
+                        <td data-order="0.0018656716417910447">0.00</td>
+                        <td data-order="0.007995735607675906">0.01</td>
+                        <td data-order="0.09728144989339019">0.10</td>
+                    </tr>
+                    
+                    <tr>
+                        <td><img src="https://avatars.githubusercontent.com/u/57241026?v=4" alt="Jaspier" width="50" height="50"></td>
+                        <td><a href="https://github.com/Jaspier" target="_blank">Jaspier</a></td>
+                        <td data-order="1">1</td>
+                        <td class="text-success" data-order="65">+65</td>
+                        <td class="text-danger" data-order="13">-13</td>
+                        <td data-order="0">0</td>
+                        <td data-order="0">0</td>
+                        <td data-order="0">0</td>
+                        <td data-order="0.0002695417789757412">0.00</td>
+                        <td data-order="0.0018867924528301887">0.00</td>
+                        <td data-order="0.008086253369272238">0.01</td>
+                        <td data-order="0.09838274932614555">0.10</td>
+                    </tr>
+                    
+                    <tr>
+                        <td><img src="https://avatars.githubusercontent.com/u/6218780?v=4" alt="RobertJGabriel" width="50" height="50"></td>
+                        <td><a href="https://github.com/RobertJGabriel" target="_blank">RobertJGabriel</a></td>
+                        <td data-order="179">179</td>
+                        <td class="text-success" data-order="2981545">+2M</td>
+                        <td class="text-danger" data-order="2286091">-2M</td>
+                        <td data-order="0">0</td>
+                        <td data-order="0">0</td>
+                        <td data-order="0">0</td>
+                        <td data-order="0.048247978436657686">0.05</td>
+                        <td data-order="0.3377358490566038">0.34</td>
+                        <td data-order="1.4474393530997305">1.45</td>
+                        <td data-order="17.610512129380055">17.61</td>
+                    </tr>
+                    
+                    <tr>
+                        <td><img src="https://avatars.githubusercontent.com/u/35259825?v=4" alt="aaaaaaaalex" width="50" height="50"></td>
+                        <td><a href="https://github.com/aaaaaaaalex" target="_blank">aaaaaaaalex</a></td>
+                        <td data-order="13">13</td>
+                        <td class="text-success" data-order="2211">+2K</td>
+                        <td class="text-danger" data-order="1746">-1K</td>
+                        <td data-order="0">0</td>
+                        <td data-order="0">0</td>
+                        <td data-order="0">0</td>
+                        <td data-order="0.003504043126684636">0.00</td>
+                        <td data-order="0.024528301886792454">0.02</td>
+                        <td data-order="0.10512129380053908">0.11</td>
+                        <td data-order="1.278975741239892">1.28</td>
+                    </tr>
+                    
+                    <tr>
+                        <td><img src="https://avatars.githubusercontent.com/u/1427241?v=4" alt="adam-lynch" width="50" height="50"></td>
+                        <td><a href="https://github.com/adam-lynch" target="_blank">adam-lynch</a></td>
+                        <td data-order="295">295</td>
+                        <td class="text-success" data-order="681966">+681K</td>
+                        <td class="text-danger" data-order="166855">-166K</td>
+                        <td data-order="0">0</td>
+                        <td data-order="0">0</td>
+                        <td data-order="0">0</td>
+                        <td data-order="0.07458912768647283">0.07</td>
+                        <td data-order="0.5221238938053098">0.52</td>
+                        <td data-order="2.2376738305941846">2.24</td>
+                        <td data-order="27.22503160556258">27.23</td>
+                    </tr>
+                    
+                    <tr>
+                        <td><img src="https://avatars.githubusercontent.com/u/3810454?v=4" alt="aidangrabe" width="50" height="50"></td>
+                        <td><a href="https://github.com/aidangrabe" target="_blank">aidangrabe</a></td>
+                        <td data-order="450">450</td>
+                        <td class="text-success" data-order="37246">+37K</td>
+                        <td class="text-danger" data-order="20251">-20K</td>
+                        <td data-order="0">0</td>
+                        <td data-order="0">0</td>
+                        <td data-order="0">0</td>
+                        <td data-order="0.11378002528445007">0.11</td>
+                        <td data-order="0.7964601769911505">0.80</td>
+                        <td data-order="3.413400758533502">3.41</td>
+                        <td data-order="41.529709228824274">41.53</td>
+                    </tr>
+                    
+                    <tr>
+                        <td><img src="https://avatars.githubusercontent.com/u/11349994?v=4" alt="aldercass" width="50" height="50"></td>
+                        <td><a href="https://github.com/aldercass" target="_blank">aldercass</a></td>
+                        <td data-order="3">3</td>
+                        <td class="text-success" data-order="12">+12</td>
+                        <td class="text-danger" data-order="2">-2</td>
+                        <td data-order="0">0</td>
+                        <td data-order="0">0</td>
+                        <td data-order="0">0</td>
+                        <td data-order="0.0008116883116883117">0.00</td>
+                        <td data-order="0.005681818181818182">0.01</td>
+                        <td data-order="0.024350649350649352">0.02</td>
+                        <td data-order="0.2962662337662338">0.30</td>
+                    </tr>
+                    
+                    <tr>
+                        <td><img src="https://avatars.githubusercontent.com/u/861824?v=4" alt="battlebottle" width="50" height="50"></td>
+                        <td><a href="https://github.com/battlebottle" target="_blank">battlebottle</a></td>
+                        <td data-order="2">2</td>
+                        <td class="text-success" data-order="2">+2</td>
+                        <td class="text-danger" data-order="1">-1</td>
+                        <td data-order="0">0</td>
+                        <td data-order="0">0</td>
+                        <td data-order="0">0</td>
+                        <td data-order="0.0005056890012642225">0.00</td>
+                        <td data-order="0.0035398230088495575">0.00</td>
+                        <td data-order="0.015170670037926675">0.02</td>
+                        <td data-order="0.1845764854614412">0.18</td>
+                    </tr>
+                    
+                    <tr>
+                        <td><img src="https://avatars.githubusercontent.com/u/42236489?v=4" alt="cbrohan-tw" width="50" height="50"></td>
+                        <td><a href="https://github.com/cbrohan-tw" target="_blank">cbrohan-tw</a></td>
+                        <td data-order="4">4</td>
+                        <td class="text-success" data-order="63">+63</td>
+                        <td class="text-danger" data-order="7">-7</td>
+                        <td data-order="0">0</td>
+                        <td data-order="0">0</td>
+                        <td data-order="0">0</td>
+                        <td data-order="0.0010822510822510823">0.00</td>
+                        <td data-order="0.007575757575757576">0.01</td>
+                        <td data-order="0.032467532467532464">0.03</td>
+                        <td data-order="0.395021645021645">0.40</td>
+                    </tr>
+                    
+                    <tr>
+                        <td><img src="https://avatars.githubusercontent.com/u/1297482?v=4" alt="chillok" width="50" height="50"></td>
+                        <td><a href="https://github.com/chillok" target="_blank">chillok</a></td>
+                        <td data-order="12">12</td>
+                        <td class="text-success" data-order="5348">+5K</td>
+                        <td class="text-danger" data-order="852">-852</td>
+                        <td data-order="0">0</td>
+                        <td data-order="0">0</td>
+                        <td data-order="0">0</td>
+                        <td data-order="0.003034134007585335">0.00</td>
+                        <td data-order="0.021238938053097345">0.02</td>
+                        <td data-order="0.09102402022756005">0.09</td>
+                        <td data-order="1.1074589127686472">1.11</td>
+                    </tr>
+                    
+                    <tr>
+                        <td><img src="https://avatars.githubusercontent.com/u/1008174?v=4" alt="dfreniche" width="50" height="50"></td>
+                        <td><a href="https://github.com/dfreniche" target="_blank">dfreniche</a></td>
+                        <td data-order="57">57</td>
+                        <td class="text-success" data-order="349">+349</td>
+                        <td class="text-danger" data-order="11017">-11K</td>
+                        <td data-order="0">0</td>
+                        <td data-order="0">0</td>
+                        <td data-order="0">0</td>
+                        <td data-order="0.0132404181184669">0.01</td>
+                        <td data-order="0.09268292682926829">0.09</td>
+                        <td data-order="0.397212543554007">0.40</td>
+                        <td data-order="4.832752613240418">4.83</td>
+                    </tr>
+                    
+                    <tr>
+                        <td><img src="https://avatars.githubusercontent.com/u/15861242?v=4" alt="diarmaidob" width="50" height="50"></td>
+                        <td><a href="https://github.com/diarmaidob" target="_blank">diarmaidob</a></td>
+                        <td data-order="304">304</td>
+                        <td class="text-success" data-order="22847">+22K</td>
+                        <td class="text-danger" data-order="29112">-29K</td>
+                        <td data-order="0">0</td>
+                        <td data-order="0">0</td>
+                        <td data-order="0">0</td>
+                        <td data-order="0.07686472819216182">0.08</td>
+                        <td data-order="0.5380530973451327">0.54</td>
+                        <td data-order="2.3059418457648544">2.31</td>
+                        <td data-order="28.055625790139064">28.06</td>
+                    </tr>
+                    
+                    <tr>
+                        <td><img src="https://avatars.githubusercontent.com/u/13963254?v=4" alt="fatihunlu" width="50" height="50"></td>
+                        <td><a href="https://github.com/fatihunlu" target="_blank">fatihunlu</a></td>
+                        <td data-order="12">12</td>
+                        <td class="text-success" data-order="17362">+17K</td>
+                        <td class="text-danger" data-order="6536">-6K</td>
+                        <td data-order="0">0</td>
+                        <td data-order="0">0</td>
+                        <td data-order="0">0</td>
+                        <td data-order="0.0032345013477088954">0.00</td>
+                        <td data-order="0.022641509433962266">0.02</td>
+                        <td data-order="0.09703504043126686">0.10</td>
+                        <td data-order="1.1805929919137468">1.18</td>
+                    </tr>
+                    
+                    <tr>
+                        <td><img src="https://avatars.githubusercontent.com/u/6553115?v=4" alt="hmarron" width="50" height="50"></td>
+                        <td><a href="https://github.com/hmarron" target="_blank">hmarron</a></td>
+                        <td data-order="5">5</td>
+                        <td class="text-success" data-order="36">+36</td>
+                        <td class="text-danger" data-order="22">-22</td>
+                        <td data-order="0">0</td>
+                        <td data-order="0">0</td>
+                        <td data-order="5">5</td>
+                        <td data-order="0.0013477088948787063">0.00</td>
+                        <td data-order="0.009433962264150945">0.01</td>
+                        <td data-order="0.04043126684636119">0.04</td>
+                        <td data-order="0.4919137466307278">0.49</td>
+                    </tr>
+                    
+                    <tr>
+                        <td><img src="https://avatars.githubusercontent.com/u/84661535?v=4" alt="iamrafal1" width="50" height="50"></td>
+                        <td><a href="https://github.com/iamrafal1" target="_blank">iamrafal1</a></td>
+                        <td data-order="1">1</td>
+                        <td class="text-success" data-order="31">+31</td>
+                        <td class="text-danger" data-order="0">-0</td>
+                        <td data-order="0">0</td>
+                        <td data-order="0">0</td>
+                        <td data-order="0">0</td>
+                        <td data-order="0.0002695417789757412">0.00</td>
+                        <td data-order="0.0018867924528301887">0.00</td>
+                        <td data-order="0.008086253369272238">0.01</td>
+                        <td data-order="0.09838274932614555">0.10</td>
+                    </tr>
+                    
+                    <tr>
+                        <td><img src="https://avatars.githubusercontent.com/u/2244122?v=4" alt="jamesdraper5" width="50" height="50"></td>
+                        <td><a href="https://github.com/jamesdraper5" target="_blank">jamesdraper5</a></td>
+                        <td data-order="92">92</td>
+                        <td class="text-success" data-order="3380">+3K</td>
+                        <td class="text-danger" data-order="1057">-1K</td>
+                        <td data-order="0">0</td>
+                        <td data-order="0">0</td>
+                        <td data-order="0">0</td>
+                        <td data-order="0.02479784366576819">0.02</td>
+                        <td data-order="0.17358490566037735">0.17</td>
+                        <td data-order="0.7439353099730458">0.74</td>
+                        <td data-order="9.05121293800539">9.05</td>
+                    </tr>
+                    
+                    <tr>
+                        <td><img src="https://avatars.githubusercontent.com/u/19345417?v=4" alt="mspitzbarth" width="50" height="50"></td>
+                        <td><a href="https://github.com/mspitzbarth" target="_blank">mspitzbarth</a></td>
+                        <td data-order="179">179</td>
+                        <td class="text-success" data-order="76051">+76K</td>
+                        <td class="text-danger" data-order="17095">-17K</td>
+                        <td data-order="0">0</td>
+                        <td data-order="0">0</td>
+                        <td data-order="0">0</td>
+                        <td data-order="0.048247978436657686">0.05</td>
+                        <td data-order="0.3377358490566038">0.34</td>
+                        <td data-order="1.4474393530997305">1.45</td>
+                        <td data-order="17.610512129380055">17.61</td>
+                    </tr>
+                    
+                    <tr>
+                        <td><img src="https://avatars.githubusercontent.com/u/7047129?v=4" alt="petsto" width="50" height="50"></td>
+                        <td><a href="https://github.com/petsto" target="_blank">petsto</a></td>
+                        <td data-order="42">42</td>
+                        <td class="text-success" data-order="180866">+180K</td>
+                        <td class="text-danger" data-order="96006">-96K</td>
+                        <td data-order="0">0</td>
+                        <td data-order="0">0</td>
+                        <td data-order="0">0</td>
+                        <td data-order="0.011320754716981133">0.01</td>
+                        <td data-order="0.07924528301886792">0.08</td>
+                        <td data-order="0.33962264150943394">0.34</td>
+                        <td data-order="4.132075471698113">4.13</td>
+                    </tr>
+                    
+                    <tr>
+                        <td><img src="https://avatars.githubusercontent.com/u/176980?v=4" alt="realmikebutler" width="50" height="50"></td>
+                        <td><a href="https://github.com/realmikebutler" target="_blank">realmikebutler</a></td>
+                        <td data-order="2736">2,736</td>
+                        <td class="text-success" data-order="369388">+369K</td>
+                        <td class="text-danger" data-order="939698">-939K</td>
+                        <td data-order="0">0</td>
+                        <td data-order="0">0</td>
+                        <td data-order="0">0</td>
+                        <td data-order="0.6355400696864112">0.64</td>
+                        <td data-order="4.4487804878048784">4.45</td>
+                        <td data-order="19.066202090592334">19.07</td>
+                        <td data-order="231.97212543554008">231.97</td>
+                    </tr>
+                    
+                    <tr>
+                        <td><img src="https://avatars.githubusercontent.com/u/1633829?v=4" alt="ripexz" width="50" height="50"></td>
+                        <td><a href="https://github.com/ripexz" target="_blank">ripexz</a></td>
+                        <td data-order="1052">1,052</td>
+                        <td class="text-success" data-order="1647722">+1M</td>
+                        <td class="text-danger" data-order="1605251">-1M</td>
+                        <td data-order="0">0</td>
+                        <td data-order="0">0</td>
+                        <td data-order="0">0</td>
+                        <td data-order="0.28038379530916846">0.28</td>
+                        <td data-order="1.962686567164179">1.96</td>
+                        <td data-order="8.411513859275054">8.41</td>
+                        <td data-order="102.34008528784648">102.34</td>
+                    </tr>
+                    
+                    <tr>
+                        <td><img src="https://avatars.githubusercontent.com/u/424531?v=4" alt="t0mm13b" width="50" height="50"></td>
+                        <td><a href="https://github.com/t0mm13b" target="_blank">t0mm13b</a></td>
+                        <td data-order="23">23</td>
+                        <td class="text-success" data-order="562">+562</td>
+                        <td class="text-danger" data-order="59">-59</td>
+                        <td data-order="0">0</td>
+                        <td data-order="0">0</td>
+                        <td data-order="0">0</td>
+                        <td data-order="0.005815423514538559">0.01</td>
+                        <td data-order="0.04070796460176991">0.04</td>
+                        <td data-order="0.17446270543615677">0.17</td>
+                        <td data-order="2.122629582806574">2.12</td>
+                    </tr>
+                    
+                </tbody>
+            </table>
+        </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.7.0.js" integrity="sha384-ogycHROOTGA//2Q8YUfjz1Sr7xMOJTUmY2ucsPVuXAg4CtpgQJQzGZsX768KqetU" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://cdn.datatables.net/1.13.7/js/jquery.dataTables.min.js" integrity="sha384-cjmdOgDzOE22dUheI5E6Gzd3upfmReW8N1y/4jwKQE50KYcvFKZJA9JxWgQOzqwQ" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <script src="https://cdn.datatables.net/1.13.7/js/dataTables.bootstrap4.min.js" integrity="sha384-vCX+UFRnh1Gp0hr9dL82snXI1HvdBaApGHMjbewoGQ69VkYcHt9jvTy+Q4CAWwPX" crossorigin="anonymous"></script>
+    <script type="text/javascript">
+    $(document).ready(function() {
+        $('#stats').DataTable({
+            "order": [[ 2, "desc" ]],
+            "iDisplayLength": 25
+        });
+    });
+    </script>
+  </body>
+</html>
