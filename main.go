@@ -10,6 +10,7 @@ import (
 	"log"
 	"net/http"
 	"os"
+	"path/filepath"
 	"time"
 
 	"github.com/alitto/pond"
@@ -64,6 +65,12 @@ func main() {
 	token := flag.String("token", "", "The GitHub token to use")
 	outputFile := flag.String("output", "output.html", "The file to output the stats to")
 	flag.Parse()
+
+	newpath := filepath.Join(".", *outputFile)
+	err := os.MkdirAll(newpath, os.ModePerm)
+	if err != nil {
+		panic(err)
+	}
 
 	if *organization == "" {
 		flag.PrintDefaults()
