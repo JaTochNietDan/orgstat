@@ -11,6 +11,7 @@ import (
 	"net/http"
 	"os"
 	"path/filepath"
+	"sync"
 	"time"
 
 	"github.com/alitto/pond"
@@ -25,6 +26,7 @@ type Repository struct {
 	stats     map[string]*Stats
 	numRepos  int64
 	reposDone int64
+	lock      *sync.Mutex
 }
 
 type Contributions struct {
@@ -85,6 +87,7 @@ func main() {
 	r := &Repository{
 		c:     github.NewTokenClient(context.Background(), *token),
 		stats: make(map[string]*Stats),
+		lock:  &sync.Mutex{},
 	}
 
 	err = r.getOrganizationStats(*organization)
@@ -226,6 +229,8 @@ func (r *Repository) getRepositoryStats(repo *github.Repository) error {
 }
 
 func (r *Repository) setStats(s *github.ContributorStats) {
+	r.lock.Lock()
+	defer r.lock.Unlock()
 	stats := r.stats[*s.Author.Login]
 	if stats == nil {
 		stats = &Stats{
