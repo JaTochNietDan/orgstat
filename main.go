@@ -87,7 +87,7 @@ func main() {
 		stats: make(map[string]*Stats),
 	}
 
-	err := r.getOrganizationStats(*organization)
+	err = r.getOrganizationStats(*organization)
 	if err != nil {
 		panic(err)
 	}
