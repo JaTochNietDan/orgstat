@@ -268,6 +268,10 @@ func (r *Repository) setStats(s *github.ContributorStats) {
 			stats.Year.Commits += int64(*w.Commits)
 		}
 
+		if *w.Commits == 0 {
+			continue
+		}
+
 		if stats.EarliestCommit.IsZero() || w.Week.Time.Before(stats.EarliestCommit) {
 			stats.EarliestCommit = w.Week.Time
 		}
